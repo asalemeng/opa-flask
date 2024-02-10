@@ -1,0 +1,58 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: opademo
+  labels:
+    app: opademo
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: opademo
+  template:
+    metadata:
+      labels:
+        app: opademo
+      name: opademo
+    spec:
+      containers:
+        - name: webapp
+          image: salemeng/sidecar-opa-app:latest
+          ports:
+            - name: http
+              containerPort: 8000
+          env:
+            - name: opa.auth.url
+              value: http://localhost:8181/v1/data/opaweb/authz/allow
+        - name: opa
+          image: openpolicyagent/opa:edge-rootless
+          ports:
+            - name: http
+              containerPort: 8181
+          args:
+            - "run"
+            - "--log-level"
+            - "--ignore=.*"  # exclude hidden dirs created by Kubernetes
+            - "--server"
+            - "/api/users"
+          volumeMounts:
+            - readOnly: true
+              mountPath: /api/routes
+              name: opademo-policy
+          livenessProbe:
+            httpGet:
+              scheme: HTTP              # assumes OPA listens on localhost:8181
+              port: 8181
+            initialDelaySeconds: 5      # tune these periods for your environemnt
+            periodSeconds: 5
+          readinessProbe:
+              httpGet:
+                path: /health?bundle=true  # Include bundle activation in readiness
+                scheme: HTTP
+                port: 8181
+              initialDelaySeconds: 5
+              periodSeconds: 5
+      volumes:
+        - name: opademo-policy
+          configMap:
+            name: opademo-policy
