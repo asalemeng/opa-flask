@@ -1,4 +1,5 @@
 # opa-flask
+![alt text](image.png)
 
 1. Setting up the Flask App with Basic Authentication:
     - Create a Flask application in Python in virtual environment (venv).
