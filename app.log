@@ -1,0 +1,731 @@
+2024-02-10 14:36:26,836 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-10 14:36:26,837 - INFO - [33mPress CTRL+C to quit[0m
+2024-02-10 14:36:26,862 - INFO -  * Restarting with stat
+2024-02-10 14:36:27,758 - WARNING -  * Debugger is active!
+2024-02-10 14:36:27,771 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 14:36:36,688 - INFO - 127.0.0.1 - - [10/Feb/2024 14:36:36] "[33mGET / HTTP/1.1[0m" 404 -
+2024-02-10 14:36:37,150 - INFO - 127.0.0.1 - - [10/Feb/2024 14:36:37] "[33mGET / HTTP/1.1[0m" 404 -
+2024-02-10 14:36:37,344 - INFO - 127.0.0.1 - - [10/Feb/2024 14:36:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-02-10 14:36:49,170 - INFO - 127.0.0.1 - - [10/Feb/2024 14:36:49] "[35m[1mGET /api/users HTTP/1.1[0m" 500 -
+2024-02-10 14:36:49,548 - INFO - 127.0.0.1 - - [10/Feb/2024 14:36:49] "GET /api/users?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-02-10 14:36:49,615 - INFO - 127.0.0.1 - - [10/Feb/2024 14:36:49] "GET /api/users?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-02-10 14:36:49,697 - INFO - 127.0.0.1 - - [10/Feb/2024 14:36:49] "GET /api/users?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-02-10 14:36:49,710 - INFO - 127.0.0.1 - - [10/Feb/2024 14:36:49] "[35m[1mGET /api/users HTTP/1.1[0m" 500 -
+2024-02-10 14:36:49,778 - INFO - 127.0.0.1 - - [10/Feb/2024 14:36:49] "[36mGET /api/users?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-02-10 14:40:41,411 - INFO - 127.0.0.1 - - [10/Feb/2024 14:40:41] "[33mGET / HTTP/1.1[0m" 404 -
+2024-02-10 14:40:41,555 - INFO - 127.0.0.1 - - [10/Feb/2024 14:40:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-02-10 14:40:41,783 - INFO - 127.0.0.1 - - [10/Feb/2024 14:40:41] "[33mGET / HTTP/1.1[0m" 404 -
+2024-02-10 14:40:47,954 - INFO - 127.0.0.1 - - [10/Feb/2024 14:40:47] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 14:40:48,345 - INFO - 127.0.0.1 - - [10/Feb/2024 14:40:48] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 14:40:53,207 - INFO - 127.0.0.1 - - [10/Feb/2024 14:40:53] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 14:40:53,255 - INFO - 127.0.0.1 - - [10/Feb/2024 14:40:53] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 14:40:57,345 - INFO - 127.0.0.1 - - [10/Feb/2024 14:40:57] "[35m[1mGET /api/users HTTP/1.1[0m" 500 -
+2024-02-10 14:40:57,408 - INFO - 127.0.0.1 - - [10/Feb/2024 14:40:57] "[36mGET /api/users?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-02-10 14:40:57,442 - INFO - 127.0.0.1 - - [10/Feb/2024 14:40:57] "[36mGET /api/users?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-02-10 14:40:57,576 - INFO - 127.0.0.1 - - [10/Feb/2024 14:40:57] "[36mGET /api/users?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-02-10 14:40:57,616 - INFO - 127.0.0.1 - - [10/Feb/2024 14:40:57] "[35m[1mGET /api/users HTTP/1.1[0m" 500 -
+2024-02-10 14:40:57,765 - INFO - 127.0.0.1 - - [10/Feb/2024 14:40:57] "[36mGET /api/users?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-02-10 14:40:58,418 - INFO - 127.0.0.1 - - [10/Feb/2024 14:40:58] "[35m[1mGET /api/users HTTP/1.1[0m" 500 -
+2024-02-10 14:40:58,460 - INFO - 127.0.0.1 - - [10/Feb/2024 14:40:58] "[36mGET /api/users?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-02-10 14:40:58,476 - INFO - 127.0.0.1 - - [10/Feb/2024 14:40:58] "[36mGET /api/users?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-02-10 14:40:58,536 - INFO - 127.0.0.1 - - [10/Feb/2024 14:40:58] "[36mGET /api/users?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-02-10 14:40:58,565 - INFO - 127.0.0.1 - - [10/Feb/2024 14:40:58] "[35m[1mGET /api/users HTTP/1.1[0m" 500 -
+2024-02-10 14:40:58,657 - INFO - 127.0.0.1 - - [10/Feb/2024 14:40:58] "[36mGET /api/users?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-02-10 14:41:12,521 - INFO - 127.0.0.1 - - [10/Feb/2024 14:41:12] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 14:41:12,984 - INFO - 127.0.0.1 - - [10/Feb/2024 14:41:12] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 14:41:29,902 - INFO - 127.0.0.1 - - [10/Feb/2024 14:41:29] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 14:41:30,173 - INFO - 127.0.0.1 - - [10/Feb/2024 14:41:30] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 14:41:38,948 - INFO - 127.0.0.1 - - [10/Feb/2024 14:41:38] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 14:41:39,107 - INFO - 127.0.0.1 - - [10/Feb/2024 14:41:39] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 14:58:29,336 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-10 14:58:29,336 - INFO - [33mPress CTRL+C to quit[0m
+2024-02-10 14:58:29,343 - INFO -  * Restarting with stat
+2024-02-10 14:58:29,957 - WARNING -  * Debugger is active!
+2024-02-10 14:58:29,968 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 14:58:36,175 - INFO - 127.0.0.1 - - [10/Feb/2024 14:58:36] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 14:58:36,876 - INFO - 127.0.0.1 - - [10/Feb/2024 14:58:36] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 14:58:38,751 - INFO - 127.0.0.1 - - [10/Feb/2024 14:58:38] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 14:58:38,794 - INFO - 127.0.0.1 - - [10/Feb/2024 14:58:38] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 14:58:43,902 - INFO - 127.0.0.1 - - [10/Feb/2024 14:58:43] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 14:58:44,284 - INFO - 127.0.0.1 - - [10/Feb/2024 14:58:44] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 14:58:54,573 - INFO - 127.0.0.1 - - [10/Feb/2024 14:58:54] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 14:58:54,960 - INFO - 127.0.0.1 - - [10/Feb/2024 14:58:54] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 15:06:57,657 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-10 15:06:57,657 - INFO - [33mPress CTRL+C to quit[0m
+2024-02-10 15:06:57,657 - INFO -  * Restarting with stat
+2024-02-10 15:06:58,264 - WARNING -  * Debugger is active!
+2024-02-10 15:06:58,264 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 15:07:02,092 - INFO - 127.0.0.1 - - [10/Feb/2024 15:07:02] "[31m[1mGET /api/users HTTP/1.1[0m" 403 -
+2024-02-10 15:08:08,937 - INFO - 127.0.0.1 - - [10/Feb/2024 15:08:08] "[31m[1mPOST /api/users HTTP/1.1[0m" 403 -
+2024-02-10 15:09:54,944 - INFO - 127.0.0.1 - - [10/Feb/2024 15:09:54] "[31m[1mPOST /api/users HTTP/1.1[0m" 403 -
+2024-02-10 15:13:25,885 - INFO -  * Detected change in 'C:\\Users\\salem\\Desktop\\sandbox\\github\\opa-flask\\app.py', reloading
+2024-02-10 15:13:26,048 - INFO -  * Restarting with stat
+2024-02-10 15:14:17,002 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-10 15:14:17,003 - INFO - [33mPress CTRL+C to quit[0m
+2024-02-10 15:14:17,013 - INFO -  * Restarting with stat
+2024-02-10 15:14:17,666 - WARNING -  * Debugger is active!
+2024-02-10 15:14:17,666 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 15:14:23,714 - INFO - 127.0.0.1 - - [10/Feb/2024 15:14:23] "[31m[1mPOST /api/users HTTP/1.1[0m" 403 -
+2024-02-10 15:14:26,082 - INFO - 127.0.0.1 - - [10/Feb/2024 15:14:26] "[31m[1mPOST /api/users HTTP/1.1[0m" 403 -
+2024-02-10 15:14:31,431 - INFO - 127.0.0.1 - - [10/Feb/2024 15:14:31] "[31m[1mGET /api/users HTTP/1.1[0m" 403 -
+2024-02-10 15:14:55,127 - INFO - 127.0.0.1 - - [10/Feb/2024 15:14:55] "[31m[1mGET /api/users HTTP/1.1[0m" 403 -
+2024-02-10 15:15:01,653 - INFO - 127.0.0.1 - - [10/Feb/2024 15:15:01] "[31m[1mGET /api/users HTTP/1.1[0m" 403 -
+2024-02-10 15:16:26,921 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-10 15:16:26,921 - INFO - [33mPress CTRL+C to quit[0m
+2024-02-10 15:16:26,928 - INFO -  * Restarting with stat
+2024-02-10 15:16:27,618 - WARNING -  * Debugger is active!
+2024-02-10 15:16:27,628 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 15:16:41,439 - INFO - Accessing /api/users endpoint by user1 with role user
+2024-02-10 15:16:41,457 - INFO - 127.0.0.1 - - [10/Feb/2024 15:16:41] "[31m[1mGET /api/users HTTP/1.1[0m" 403 -
+2024-02-10 15:16:46,829 - INFO - Accessing /api/users endpoint by user1 with role user
+2024-02-10 15:16:46,833 - INFO - 127.0.0.1 - - [10/Feb/2024 15:16:46] "[31m[1mGET /api/users HTTP/1.1[0m" 403 -
+2024-02-10 15:16:48,008 - INFO - Accessing /api/users endpoint by user1 with role user
+2024-02-10 15:16:48,016 - INFO - 127.0.0.1 - - [10/Feb/2024 15:16:48] "[31m[1mGET /api/users HTTP/1.1[0m" 403 -
+2024-02-10 15:19:33,339 - INFO - Accessing /api/users endpoint by user1 with role user
+2024-02-10 15:19:33,352 - INFO - 127.0.0.1 - - [10/Feb/2024 15:19:33] "[31m[1mGET /api/users HTTP/1.1[0m" 403 -
+2024-02-10 15:20:30,012 - INFO -  * Detected change in 'C:\\Users\\salem\\Desktop\\sandbox\\github\\opa-flask\\app.py', reloading
+2024-02-10 15:20:30,150 - INFO -  * Restarting with stat
+2024-02-10 15:20:31,137 - WARNING -  * Debugger is active!
+2024-02-10 15:20:31,149 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 15:20:36,789 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-10 15:20:36,789 - INFO - [33mPress CTRL+C to quit[0m
+2024-02-10 15:20:36,794 - INFO -  * Restarting with stat
+2024-02-10 15:20:37,522 - WARNING -  * Debugger is active!
+2024-02-10 15:20:37,531 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 15:20:48,837 - INFO - 127.0.0.1 - - [10/Feb/2024 15:20:48] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 15:20:49,218 - INFO - 127.0.0.1 - - [10/Feb/2024 15:20:49] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 15:20:49,920 - INFO - 127.0.0.1 - - [10/Feb/2024 15:20:49] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 15:20:49,976 - INFO - 127.0.0.1 - - [10/Feb/2024 15:20:49] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 15:20:50,577 - INFO - 127.0.0.1 - - [10/Feb/2024 15:20:50] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 15:20:50,951 - INFO - 127.0.0.1 - - [10/Feb/2024 15:20:50] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 15:20:51,066 - INFO - 127.0.0.1 - - [10/Feb/2024 15:20:51] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 15:20:51,201 - INFO - 127.0.0.1 - - [10/Feb/2024 15:20:51] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 15:20:51,377 - INFO - 127.0.0.1 - - [10/Feb/2024 15:20:51] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 15:20:51,448 - INFO - 127.0.0.1 - - [10/Feb/2024 15:20:51] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 15:20:52,643 - INFO - 127.0.0.1 - - [10/Feb/2024 15:20:52] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 15:20:52,998 - INFO - 127.0.0.1 - - [10/Feb/2024 15:20:52] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 15:20:56,208 - INFO - User user1 authenticated with role user
+2024-02-10 15:20:56,208 - INFO - Accessing /api/users endpoint by user1 with role user
+2024-02-10 15:20:56,226 - WARNING - Unauthorized access to /api/users by user1
+2024-02-10 15:20:56,227 - INFO - 127.0.0.1 - - [10/Feb/2024 15:20:56] "[31m[1mGET /api/users HTTP/1.1[0m" 403 -
+2024-02-10 15:20:57,239 - INFO - User user1 authenticated with role user
+2024-02-10 15:20:57,239 - INFO - Accessing /api/users endpoint by user1 with role user
+2024-02-10 15:20:57,244 - WARNING - Unauthorized access to /api/users by user1
+2024-02-10 15:20:57,244 - INFO - 127.0.0.1 - - [10/Feb/2024 15:20:57] "[31m[1mGET /api/users HTTP/1.1[0m" 403 -
+2024-02-10 15:22:36,701 - INFO -  * Detected change in 'C:\\Users\\salem\\Desktop\\sandbox\\github\\opa-flask\\app.py', reloading
+2024-02-10 15:22:36,784 - INFO -  * Restarting with stat
+2024-02-10 15:22:54,280 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-10 15:22:54,280 - INFO - [33mPress CTRL+C to quit[0m
+2024-02-10 15:22:54,302 - INFO -  * Restarting with stat
+2024-02-10 15:22:55,108 - WARNING -  * Debugger is active!
+2024-02-10 15:22:55,118 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 15:23:33,721 - INFO - 127.0.0.1 - - [10/Feb/2024 15:23:33] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 15:23:34,101 - INFO - 127.0.0.1 - - [10/Feb/2024 15:23:34] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 15:23:34,494 - INFO - 127.0.0.1 - - [10/Feb/2024 15:23:34] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 15:23:34,855 - INFO - 127.0.0.1 - - [10/Feb/2024 15:23:34] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 15:23:35,554 - INFO - 127.0.0.1 - - [10/Feb/2024 15:23:35] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 15:23:35,616 - INFO - 127.0.0.1 - - [10/Feb/2024 15:23:35] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 15:23:36,719 - INFO - 127.0.0.1 - - [10/Feb/2024 15:23:36] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 15:23:37,067 - INFO - 127.0.0.1 - - [10/Feb/2024 15:23:37] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 15:23:42,413 - INFO - User user1 authenticated with role user
+2024-02-10 15:23:42,413 - INFO - Accessing /api/users endpoint by user1 with role user
+2024-02-10 15:23:42,427 - WARNING - Unauthorized access to /api/users by user1
+2024-02-10 15:23:42,428 - INFO - 127.0.0.1 - - [10/Feb/2024 15:23:42] "[31m[1mGET /api/users HTTP/1.1[0m" 403 -
+2024-02-10 15:23:43,729 - INFO - User user1 authenticated with role user
+2024-02-10 15:23:43,730 - INFO - Accessing /api/users endpoint by user1 with role user
+2024-02-10 15:23:43,734 - WARNING - Unauthorized access to /api/users by user1
+2024-02-10 15:23:43,735 - INFO - 127.0.0.1 - - [10/Feb/2024 15:23:43] "[31m[1mGET /api/users HTTP/1.1[0m" 403 -
+2024-02-10 15:38:53,837 - INFO -  * Detected change in 'C:\\Users\\salem\\Desktop\\sandbox\\github\\opa-flask\\app.py', reloading
+2024-02-10 15:38:54,020 - INFO -  * Restarting with stat
+2024-02-10 15:38:54,921 - WARNING -  * Debugger is active!
+2024-02-10 15:38:54,934 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 15:38:56,018 - INFO -  * Detected change in 'C:\\Users\\salem\\Desktop\\sandbox\\github\\opa-flask\\app.py', reloading
+2024-02-10 15:38:56,123 - INFO -  * Restarting with stat
+2024-02-10 15:38:57,171 - WARNING -  * Debugger is active!
+2024-02-10 15:38:57,186 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 15:39:02,029 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-10 15:39:02,029 - INFO - [33mPress CTRL+C to quit[0m
+2024-02-10 15:39:02,043 - INFO -  * Restarting with stat
+2024-02-10 15:39:02,908 - WARNING -  * Debugger is active!
+2024-02-10 15:39:02,908 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 15:39:14,689 - INFO - 127.0.0.1 - - [10/Feb/2024 15:39:14] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 15:39:15,431 - INFO - 127.0.0.1 - - [10/Feb/2024 15:39:15] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 15:39:17,266 - INFO - 127.0.0.1 - - [10/Feb/2024 15:39:17] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 15:39:17,339 - INFO - 127.0.0.1 - - [10/Feb/2024 15:39:17] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 15:39:20,351 - INFO - User user1 authenticated with role user
+2024-02-10 15:39:20,352 - INFO - Accessing /api/users endpoint by user1 with role user
+2024-02-10 15:39:20,391 - INFO - 127.0.0.1 - - [10/Feb/2024 15:39:20] "GET /api/users HTTP/1.1" 200 -
+2024-02-10 15:39:47,942 - INFO - User admin authenticated with role admin
+2024-02-10 15:39:47,942 - INFO - Accessing /api/users endpoint by admin with role admin
+2024-02-10 15:39:47,951 - INFO - 127.0.0.1 - - [10/Feb/2024 15:39:47] "GET /api/users HTTP/1.1" 200 -
+2024-02-10 15:39:53,550 - WARNING - Invalid credentials provided: testss
+2024-02-10 15:39:53,551 - INFO - 127.0.0.1 - - [10/Feb/2024 15:39:53] "[31m[1mGET /api/users HTTP/1.1[0m" 401 -
+2024-02-10 15:40:27,152 - WARNING - Invalid credentials provided: testss
+2024-02-10 15:40:27,153 - INFO - 127.0.0.1 - - [10/Feb/2024 15:40:27] "[31m[1mPOST /api/users HTTP/1.1[0m" 401 -
+2024-02-10 15:40:31,639 - INFO - User admin authenticated with role admin
+2024-02-10 15:40:31,640 - INFO - Creating user by admin: admin
+2024-02-10 15:40:31,657 - INFO - 127.0.0.1 - - [10/Feb/2024 15:40:31] "[35m[1mPOST /api/users HTTP/1.1[0m" 500 -
+2024-02-10 15:45:41,225 - INFO - User admin authenticated with role admin
+2024-02-10 15:45:41,227 - INFO - Creating user by admin: admin
+2024-02-10 15:45:41,288 - INFO - 127.0.0.1 - - [10/Feb/2024 15:45:41] "[35m[1mPOST /api/users HTTP/1.1[0m" 500 -
+2024-02-10 15:47:30,698 - INFO -  * Detected change in 'C:\\Users\\salem\\Desktop\\sandbox\\github\\opa-flask\\app.py', reloading
+2024-02-10 15:47:30,854 - INFO -  * Restarting with stat
+2024-02-10 15:47:31,895 - WARNING -  * Debugger is active!
+2024-02-10 15:47:31,904 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 15:47:40,777 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-10 15:47:40,777 - INFO - [33mPress CTRL+C to quit[0m
+2024-02-10 15:47:40,777 - INFO -  * Restarting with stat
+2024-02-10 15:47:41,525 - WARNING -  * Debugger is active!
+2024-02-10 15:47:41,542 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 15:47:59,701 - INFO - 127.0.0.1 - - [10/Feb/2024 15:47:59] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 15:48:00,169 - INFO - 127.0.0.1 - - [10/Feb/2024 15:48:00] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 15:48:02,721 - INFO - User admin authenticated with role admin
+2024-02-10 15:48:02,722 - INFO - Creating user by admin: admin
+2024-02-10 15:48:02,747 - INFO - 127.0.0.1 - - [10/Feb/2024 15:48:02] "[35m[1mPOST /api/users HTTP/1.1[0m" 500 -
+2024-02-10 15:48:58,588 - INFO -  * Detected change in 'C:\\Users\\salem\\Desktop\\sandbox\\github\\opa-flask\\app.py', reloading
+2024-02-10 15:48:58,645 - INFO -  * Restarting with stat
+2024-02-10 15:48:59,472 - WARNING -  * Debugger is active!
+2024-02-10 15:48:59,476 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 15:49:02,989 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-10 15:49:02,989 - INFO - [33mPress CTRL+C to quit[0m
+2024-02-10 15:49:02,997 - INFO -  * Restarting with stat
+2024-02-10 15:49:03,606 - WARNING -  * Debugger is active!
+2024-02-10 15:49:03,620 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 15:49:09,623 - INFO - 127.0.0.1 - - [10/Feb/2024 15:49:09] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 15:49:09,984 - INFO - 127.0.0.1 - - [10/Feb/2024 15:49:09] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 15:49:10,543 - INFO - 127.0.0.1 - - [10/Feb/2024 15:49:10] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 15:49:10,603 - INFO - 127.0.0.1 - - [10/Feb/2024 15:49:10] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 15:49:14,281 - INFO - User admin authenticated with role admin
+2024-02-10 15:49:14,282 - INFO - Creating user by admin: admin
+2024-02-10 15:49:14,299 - INFO - 127.0.0.1 - - [10/Feb/2024 15:49:14] "[35m[1mPOST /api/users HTTP/1.1[0m" 500 -
+2024-02-10 15:49:25,261 - WARNING - Invalid credentials provided: user
+2024-02-10 15:49:25,262 - INFO - 127.0.0.1 - - [10/Feb/2024 15:49:25] "[31m[1mPOST /api/users HTTP/1.1[0m" 401 -
+2024-02-10 15:49:29,240 - WARNING - Invalid credentials provided: user
+2024-02-10 15:49:29,242 - INFO - 127.0.0.1 - - [10/Feb/2024 15:49:29] "[31m[1mGET /api/users HTTP/1.1[0m" 401 -
+2024-02-10 15:49:36,228 - WARNING - Invalid credentials provided: user
+2024-02-10 15:49:36,229 - INFO - 127.0.0.1 - - [10/Feb/2024 15:49:36] "[31m[1mGET /api/users HTTP/1.1[0m" 401 -
+2024-02-10 15:49:40,703 - WARNING - Invalid credentials provided: user
+2024-02-10 15:49:40,704 - INFO - 127.0.0.1 - - [10/Feb/2024 15:49:40] "[31m[1mGET /api/users HTTP/1.1[0m" 401 -
+2024-02-10 15:51:31,417 - INFO - User admin authenticated with role admin
+2024-02-10 15:51:31,417 - INFO - Creating user by admin: admin
+2024-02-10 15:51:31,426 - INFO - 127.0.0.1 - - [10/Feb/2024 15:51:31] "[35m[1mPOST /api/users HTTP/1.1[0m" 500 -
+2024-02-10 15:53:16,905 - INFO -  * Detected change in 'C:\\Users\\salem\\Desktop\\sandbox\\github\\opa-flask\\app.py', reloading
+2024-02-10 15:53:16,974 - INFO -  * Restarting with stat
+2024-02-10 15:53:20,543 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-10 15:53:20,543 - INFO - [33mPress CTRL+C to quit[0m
+2024-02-10 15:53:20,551 - INFO -  * Restarting with stat
+2024-02-10 15:53:21,347 - WARNING -  * Debugger is active!
+2024-02-10 15:53:21,353 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 15:53:26,298 - INFO - 127.0.0.1 - - [10/Feb/2024 15:53:26] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 15:53:26,670 - INFO - 127.0.0.1 - - [10/Feb/2024 15:53:26] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 15:53:27,076 - INFO - 127.0.0.1 - - [10/Feb/2024 15:53:27] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 15:53:27,125 - INFO - 127.0.0.1 - - [10/Feb/2024 15:53:27] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 15:53:30,607 - INFO - User admin authenticated with role admin
+2024-02-10 15:53:30,607 - INFO - Creating user by admin: admin
+2024-02-10 15:53:30,625 - INFO - 127.0.0.1 - - [10/Feb/2024 15:53:30] "[31m[1mPOST /api/users HTTP/1.1[0m" 415 -
+2024-02-10 15:53:46,608 - INFO - User admin authenticated with role admin
+2024-02-10 15:53:46,608 - INFO - Creating user by admin: admin
+2024-02-10 15:53:46,621 - INFO - 127.0.0.1 - - [10/Feb/2024 15:53:46] "[31m[1mPOST /api/users HTTP/1.1[0m" 415 -
+2024-02-10 15:55:22,173 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-10 15:55:22,173 - INFO - [33mPress CTRL+C to quit[0m
+2024-02-10 15:55:22,187 - INFO -  * Restarting with stat
+2024-02-10 15:55:22,874 - WARNING -  * Debugger is active!
+2024-02-10 15:55:22,884 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 15:55:32,215 - WARNING - Invalid credentials provided: user1
+2024-02-10 15:55:32,215 - INFO - 127.0.0.1 - - [10/Feb/2024 15:55:32] "[31m[1mGET /api/users HTTP/1.1[0m" 401 -
+2024-02-10 15:59:22,643 - INFO -  * Detected change in 'C:\\Users\\salem\\Desktop\\sandbox\\github\\opa-flask\\app.py', reloading
+2024-02-10 15:59:22,725 - INFO -  * Restarting with stat
+2024-02-10 15:59:23,799 - WARNING -  * Debugger is active!
+2024-02-10 15:59:23,819 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 15:59:45,436 - INFO -  * Detected change in 'C:\\Users\\salem\\Desktop\\sandbox\\github\\opa-flask\\app.py', reloading
+2024-02-10 15:59:45,542 - INFO -  * Restarting with stat
+2024-02-10 15:59:46,438 - WARNING -  * Debugger is active!
+2024-02-10 15:59:46,447 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 15:59:50,049 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-10 15:59:50,049 - INFO - [33mPress CTRL+C to quit[0m
+2024-02-10 15:59:50,055 - INFO -  * Restarting with stat
+2024-02-10 15:59:50,707 - WARNING -  * Debugger is active!
+2024-02-10 15:59:50,721 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 15:59:56,249 - INFO - 127.0.0.1 - - [10/Feb/2024 15:59:56] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 15:59:56,867 - INFO - 127.0.0.1 - - [10/Feb/2024 15:59:56] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 15:59:56,879 - INFO - 127.0.0.1 - - [10/Feb/2024 15:59:56] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 15:59:57,134 - INFO - 127.0.0.1 - - [10/Feb/2024 15:59:57] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 16:00:03,565 - WARNING - Invalid credentials provided: user1
+2024-02-10 16:00:03,565 - INFO - 127.0.0.1 - - [10/Feb/2024 16:00:03] "[31m[1mGET /api/users HTTP/1.1[0m" 401 -
+2024-02-10 16:00:07,576 - INFO - User admin authenticated with role admin
+2024-02-10 16:00:07,576 - INFO - Creating user by admin: admin
+2024-02-10 16:00:07,591 - INFO - 127.0.0.1 - - [10/Feb/2024 16:00:07] "[31m[1mPOST /api/users HTTP/1.1[0m" 415 -
+2024-02-10 16:00:08,778 - INFO - User admin authenticated with role admin
+2024-02-10 16:00:08,778 - INFO - Creating user by admin: admin
+2024-02-10 16:00:08,784 - INFO - 127.0.0.1 - - [10/Feb/2024 16:00:08] "[31m[1mPOST /api/users HTTP/1.1[0m" 415 -
+2024-02-10 16:01:53,835 - INFO -  * Detected change in 'C:\\Users\\salem\\Desktop\\sandbox\\github\\opa-flask\\app.py', reloading
+2024-02-10 16:01:53,894 - INFO -  * Restarting with stat
+2024-02-10 16:01:54,745 - WARNING -  * Debugger is active!
+2024-02-10 16:01:54,757 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 16:01:58,877 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-10 16:01:58,879 - INFO - [33mPress CTRL+C to quit[0m
+2024-02-10 16:01:58,890 - INFO -  * Restarting with stat
+2024-02-10 16:01:59,758 - WARNING -  * Debugger is active!
+2024-02-10 16:01:59,771 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 16:02:03,768 - INFO - 127.0.0.1 - - [10/Feb/2024 16:02:03] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 16:02:04,136 - INFO - 127.0.0.1 - - [10/Feb/2024 16:02:04] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 16:02:06,803 - INFO - User admin authenticated with role admin
+2024-02-10 16:02:06,803 - INFO - Creating user by admin: admin
+2024-02-10 16:02:06,818 - WARNING - Unsupported Media Type: Request must be JSON
+2024-02-10 16:02:06,819 - INFO - 127.0.0.1 - - [10/Feb/2024 16:02:06] "[31m[1mPOST /api/users HTTP/1.1[0m" 415 -
+2024-02-10 16:02:10,034 - INFO - User admin authenticated with role admin
+2024-02-10 16:02:10,034 - INFO - Creating user by admin: admin
+2024-02-10 16:02:10,042 - WARNING - Unsupported Media Type: Request must be JSON
+2024-02-10 16:02:10,042 - INFO - 127.0.0.1 - - [10/Feb/2024 16:02:10] "[31m[1mPOST /api/users HTTP/1.1[0m" 415 -
+2024-02-10 16:02:15,625 - WARNING - Invalid credentials provided: user1
+2024-02-10 16:02:15,625 - INFO - 127.0.0.1 - - [10/Feb/2024 16:02:15] "[31m[1mGET /api/users HTTP/1.1[0m" 401 -
+2024-02-10 16:02:18,015 - INFO - User admin authenticated with role admin
+2024-02-10 16:02:18,016 - INFO - Creating user by admin: admin
+2024-02-10 16:02:18,020 - WARNING - Unsupported Media Type: Request must be JSON
+2024-02-10 16:02:18,020 - INFO - 127.0.0.1 - - [10/Feb/2024 16:02:18] "[31m[1mPOST /api/users HTTP/1.1[0m" 415 -
+2024-02-10 16:03:22,937 - INFO -  * Detected change in 'C:\\Users\\salem\\Desktop\\sandbox\\github\\opa-flask\\app.py', reloading
+2024-02-10 16:03:23,008 - INFO -  * Restarting with stat
+2024-02-10 16:11:20,047 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-10 16:11:20,048 - INFO - [33mPress CTRL+C to quit[0m
+2024-02-10 16:11:20,057 - INFO -  * Restarting with stat
+2024-02-10 16:11:20,862 - WARNING -  * Debugger is active!
+2024-02-10 16:11:20,878 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 16:11:25,847 - INFO - 127.0.0.1 - - [10/Feb/2024 16:11:25] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 16:11:26,540 - INFO - 127.0.0.1 - - [10/Feb/2024 16:11:26] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 16:11:32,044 - INFO - Authorization request: Method=POST, Path=/api/users, Role=admin, Result=denied
+2024-02-10 16:11:32,045 - INFO - 127.0.0.1 - - [10/Feb/2024 16:11:32] "[31m[1mPOST /api/users HTTP/1.1[0m" 403 -
+2024-02-10 16:11:34,027 - INFO - Authorization request: Method=POST, Path=/api/users, Role=admin, Result=denied
+2024-02-10 16:11:34,028 - INFO - 127.0.0.1 - - [10/Feb/2024 16:11:34] "[31m[1mPOST /api/users HTTP/1.1[0m" 403 -
+2024-02-10 16:11:38,063 - INFO - 127.0.0.1 - - [10/Feb/2024 16:11:38] "[31m[1mGET /api/users HTTP/1.1[0m" 401 -
+2024-02-10 16:12:22,476 - INFO -  * Detected change in 'C:\\Users\\salem\\Desktop\\sandbox\\github\\opa-flask\\app.py', reloading
+2024-02-10 16:12:22,540 - INFO -  * Restarting with stat
+2024-02-10 16:12:23,530 - WARNING -  * Debugger is active!
+2024-02-10 16:12:23,546 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 16:12:28,888 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-10 16:12:28,888 - INFO - [33mPress CTRL+C to quit[0m
+2024-02-10 16:12:28,888 - INFO -  * Restarting with stat
+2024-02-10 16:12:29,651 - WARNING -  * Debugger is active!
+2024-02-10 16:12:29,666 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 16:12:35,079 - INFO - 127.0.0.1 - - [10/Feb/2024 16:12:35] "[31m[1mGET /api/users HTTP/1.1[0m" 401 -
+2024-02-10 16:12:36,485 - INFO - 127.0.0.1 - - [10/Feb/2024 16:12:36] "[31m[1mGET /api/users HTTP/1.1[0m" 401 -
+2024-02-10 16:12:45,332 - INFO - 127.0.0.1 - - [10/Feb/2024 16:12:45] "[31m[1mGET /api/users HTTP/1.1[0m" 401 -
+2024-02-10 16:14:03,122 - INFO -  * Detected change in 'C:\\Users\\salem\\Desktop\\sandbox\\github\\opa-flask\\app.py', reloading
+2024-02-10 16:14:03,212 - INFO -  * Restarting with stat
+2024-02-10 16:14:07,222 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-10 16:14:07,222 - INFO - [33mPress CTRL+C to quit[0m
+2024-02-10 16:14:07,237 - INFO -  * Restarting with stat
+2024-02-10 16:14:07,825 - WARNING -  * Debugger is active!
+2024-02-10 16:14:07,831 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 16:14:16,065 - INFO - 127.0.0.1 - - [10/Feb/2024 16:14:16] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 16:14:16,441 - INFO - 127.0.0.1 - - [10/Feb/2024 16:14:16] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 16:14:22,631 - WARNING - Invalid credentials provided: user1
+2024-02-10 16:14:22,632 - INFO - 127.0.0.1 - - [10/Feb/2024 16:14:22] "[31m[1mGET /api/users HTTP/1.1[0m" 401 -
+2024-02-10 16:14:26,123 - INFO - User admin authenticated with role admin
+2024-02-10 16:14:26,123 - INFO - Creating user by admin: admin
+2024-02-10 16:14:28,843 - ERROR - Error querying OPA: HTTPConnectionPool(host='opa-service', port=8181): Max retries exceeded with url: /v1/data/access/authz (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x0000017DC34FCBC0>: Failed to resolve 'opa-service' ([Errno 11001] getaddrinfo failed)"))
+2024-02-10 16:14:28,843 - WARNING - Unauthorized access to /api/users by admin
+2024-02-10 16:14:28,844 - INFO - 127.0.0.1 - - [10/Feb/2024 16:14:28] "[31m[1mPOST /api/users HTTP/1.1[0m" 403 -
+2024-02-10 16:17:25,516 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-10 16:17:25,516 - INFO - [33mPress CTRL+C to quit[0m
+2024-02-10 16:17:25,530 - INFO -  * Restarting with stat
+2024-02-10 16:17:26,451 - WARNING -  * Debugger is active!
+2024-02-10 16:17:26,467 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 16:17:32,067 - INFO - 127.0.0.1 - - [10/Feb/2024 16:17:32] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 16:17:32,452 - INFO - 127.0.0.1 - - [10/Feb/2024 16:17:32] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 16:17:32,836 - INFO - 127.0.0.1 - - [10/Feb/2024 16:17:32] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 16:17:32,883 - INFO - 127.0.0.1 - - [10/Feb/2024 16:17:32] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 16:17:40,792 - INFO - User admin authenticated with role admin
+2024-02-10 16:17:40,792 - INFO - Creating user by admin: admin
+2024-02-10 16:17:43,515 - ERROR - Error querying OPA: HTTPConnectionPool(host='opa-service', port=8181): Max retries exceeded with url: /v1/data/access/authz (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000285111CA270>: Failed to resolve 'opa-service' ([Errno 11001] getaddrinfo failed)"))
+2024-02-10 16:17:43,515 - WARNING - Unauthorized access to /api/users by admin
+2024-02-10 16:17:43,515 - INFO - 127.0.0.1 - - [10/Feb/2024 16:17:43] "[31m[1mPOST /api/users HTTP/1.1[0m" 403 -
+2024-02-10 16:19:16,084 - INFO -  * Detected change in 'C:\\Users\\salem\\Desktop\\sandbox\\github\\opa-flask\\app.py', reloading
+2024-02-10 16:19:16,166 - INFO -  * Restarting with stat
+2024-02-10 16:19:21,915 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-10 16:19:21,915 - INFO - [33mPress CTRL+C to quit[0m
+2024-02-10 16:19:21,924 - INFO -  * Restarting with stat
+2024-02-10 16:19:22,643 - WARNING -  * Debugger is active!
+2024-02-10 16:19:22,660 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 16:19:32,925 - INFO - 127.0.0.1 - - [10/Feb/2024 16:19:32] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 16:19:33,305 - INFO - 127.0.0.1 - - [10/Feb/2024 16:19:33] "[33mGET /opa/users HTTP/1.1[0m" 404 -
+2024-02-10 16:19:41,107 - INFO - User admin authenticated with role admin
+2024-02-10 16:19:41,107 - INFO - Creating user by admin: admin
+2024-02-10 16:19:43,818 - ERROR - Error querying OPA: HTTPConnectionPool(host='opa-service', port=8181): Max retries exceeded with url: /v1/data/access/authz (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x0000028CA18C4CE0>: Failed to resolve 'opa-service' ([Errno 11001] getaddrinfo failed)"))
+2024-02-10 16:19:43,818 - WARNING - Unauthorized access to /api/users by admin
+2024-02-10 16:19:43,819 - INFO - 127.0.0.1 - - [10/Feb/2024 16:19:43] "[31m[1mPOST /api/users HTTP/1.1[0m" 403 -
+2024-02-10 16:19:47,058 - WARNING - Invalid credentials provided: user1
+2024-02-10 16:19:47,059 - INFO - 127.0.0.1 - - [10/Feb/2024 16:19:47] "[31m[1mGET /api/users HTTP/1.1[0m" 401 -
+2024-02-10 16:20:01,272 - INFO - User user1 authenticated with role user
+2024-02-10 16:20:01,272 - INFO - Accessing /api/users endpoint by user1 with role user
+2024-02-10 16:20:03,966 - ERROR - Error querying OPA: HTTPConnectionPool(host='opa-service', port=8181): Max retries exceeded with url: /v1/data/access/authz (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x0000028CA18C73E0>: Failed to resolve 'opa-service' ([Errno 11001] getaddrinfo failed)"))
+2024-02-10 16:20:03,966 - WARNING - Unauthorized access to /api/users by user1
+2024-02-10 16:20:03,967 - INFO - 127.0.0.1 - - [10/Feb/2024 16:20:03] "[31m[1mGET /api/users HTTP/1.1[0m" 403 -
+2024-02-10 16:20:10,363 - INFO - User admin authenticated with role admin
+2024-02-10 16:20:10,363 - INFO - Creating user by admin: admin
+2024-02-10 16:20:13,073 - ERROR - Error querying OPA: HTTPConnectionPool(host='opa-service', port=8181): Max retries exceeded with url: /v1/data/access/authz (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x0000028CA18C7410>: Failed to resolve 'opa-service' ([Errno 11001] getaddrinfo failed)"))
+2024-02-10 16:20:13,073 - WARNING - Unauthorized access to /api/users by admin
+2024-02-10 16:20:13,073 - INFO - 127.0.0.1 - - [10/Feb/2024 16:20:13] "[31m[1mPOST /api/users HTTP/1.1[0m" 403 -
+2024-02-10 16:22:28,262 - INFO - User admin authenticated with role admin
+2024-02-10 16:22:28,264 - INFO - Creating user by admin: admin
+2024-02-10 16:22:30,955 - ERROR - Error querying OPA: HTTPConnectionPool(host='opa-service', port=8181): Max retries exceeded with url: /v1/data/access/authz (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x0000028CA18C6780>: Failed to resolve 'opa-service' ([Errno 11001] getaddrinfo failed)"))
+2024-02-10 16:22:30,955 - WARNING - Unauthorized access to /api/users by admin
+2024-02-10 16:22:30,956 - INFO - 127.0.0.1 - - [10/Feb/2024 16:22:30] "[31m[1mPOST /api/users HTTP/1.1[0m" 403 -
+2024-02-10 16:22:52,016 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-10 16:22:52,016 - INFO - [33mPress CTRL+C to quit[0m
+2024-02-10 16:22:52,024 - INFO -  * Restarting with stat
+2024-02-10 16:22:52,837 - WARNING -  * Debugger is active!
+2024-02-10 16:22:52,854 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 16:23:00,688 - INFO - User admin authenticated with role admin
+2024-02-10 16:23:00,688 - INFO - Creating user by admin: admin
+2024-02-10 16:23:03,394 - ERROR - Error querying OPA: HTTPConnectionPool(host='opa-service', port=8181): Max retries exceeded with url: /v1/data/access/authz (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x0000023BACBC4F20>: Failed to resolve 'opa-service' ([Errno 11001] getaddrinfo failed)"))
+2024-02-10 16:23:03,394 - WARNING - Unauthorized access to /api/users by admin
+2024-02-10 16:23:03,395 - INFO - 127.0.0.1 - - [10/Feb/2024 16:23:03] "[31m[1mPOST /api/users HTTP/1.1[0m" 403 -
+2024-02-10 16:23:10,067 - INFO - User user1 authenticated with role user
+2024-02-10 16:23:10,067 - INFO - Accessing /api/users endpoint by user1 with role user
+2024-02-10 16:23:12,769 - ERROR - Error querying OPA: HTTPConnectionPool(host='opa-service', port=8181): Max retries exceeded with url: /v1/data/access/authz (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x0000023BACBC4050>: Failed to resolve 'opa-service' ([Errno 11001] getaddrinfo failed)"))
+2024-02-10 16:23:12,769 - WARNING - Unauthorized access to /api/users by user1
+2024-02-10 16:23:12,769 - INFO - 127.0.0.1 - - [10/Feb/2024 16:23:12] "[31m[1mGET /api/users HTTP/1.1[0m" 403 -
+2024-02-10 16:26:17,009 - INFO -  * Detected change in 'C:\\Users\\salem\\Desktop\\sandbox\\github\\opa-flask\\app.py', reloading
+2024-02-10 16:26:17,116 - INFO -  * Restarting with stat
+2024-02-10 16:26:18,366 - WARNING -  * Debugger is active!
+2024-02-10 16:26:18,371 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 16:26:23,443 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-10 16:26:23,443 - INFO - [33mPress CTRL+C to quit[0m
+2024-02-10 16:26:23,458 - INFO -  * Restarting with stat
+2024-02-10 16:26:24,352 - WARNING -  * Debugger is active!
+2024-02-10 16:26:24,366 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 16:26:32,046 - INFO - User user1 authenticated with role user
+2024-02-10 16:26:32,046 - INFO - Accessing /api/users endpoint by user1 with role user
+2024-02-10 16:26:34,729 - ERROR - Error querying OPA: HTTPConnectionPool(host='opa-service', port=8181): Max retries exceeded with url: /v1/data/access/authz (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x0000026A2988F680>: Failed to resolve 'opa-service' ([Errno 11001] getaddrinfo failed)"))
+2024-02-10 16:26:34,729 - WARNING - Unauthorized access to /api/users by user1
+2024-02-10 16:26:34,730 - INFO - 127.0.0.1 - - [10/Feb/2024 16:26:34] "[31m[1mGET /api/users HTTP/1.1[0m" 403 -
+2024-02-10 16:26:36,085 - INFO - User user1 authenticated with role user
+2024-02-10 16:26:36,085 - INFO - Accessing /api/users endpoint by user1 with role user
+2024-02-10 16:26:38,795 - ERROR - Error querying OPA: HTTPConnectionPool(host='opa-service', port=8181): Max retries exceeded with url: /v1/data/access/authz (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x0000026A2A9C49B0>: Failed to resolve 'opa-service' ([Errno 11001] getaddrinfo failed)"))
+2024-02-10 16:26:38,795 - WARNING - Unauthorized access to /api/users by user1
+2024-02-10 16:26:38,795 - INFO - 127.0.0.1 - - [10/Feb/2024 16:26:38] "[31m[1mGET /api/users HTTP/1.1[0m" 403 -
+2024-02-10 16:27:51,416 - INFO -  * Detected change in 'C:\\Users\\salem\\Desktop\\sandbox\\github\\opa-flask\\app.py', reloading
+2024-02-10 16:27:51,482 - INFO -  * Restarting with stat
+2024-02-10 16:27:52,355 - WARNING -  * Debugger is active!
+2024-02-10 16:27:52,371 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 16:27:56,152 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-10 16:27:56,152 - INFO - [33mPress CTRL+C to quit[0m
+2024-02-10 16:27:56,161 - INFO -  * Restarting with stat
+2024-02-10 16:27:56,786 - WARNING -  * Debugger is active!
+2024-02-10 16:27:56,803 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 16:28:08,262 - INFO - User user1 authenticated with role user
+2024-02-10 16:28:08,262 - INFO - Accessing /api/users endpoint by user1 with role user
+2024-02-10 16:28:10,969 - ERROR - Error querying OPA: HTTPConnectionPool(host='opa-service', port=8181): Max retries exceeded with url: /v1/data/access/authz (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000212B327DD90>: Failed to resolve 'opa-service' ([Errno 11001] getaddrinfo failed)"))
+2024-02-10 16:28:10,970 - WARNING - Unauthorized access to /api/users by user1
+2024-02-10 16:28:10,970 - INFO - 127.0.0.1 - - [10/Feb/2024 16:28:10] "[31m[1mGET /api/users HTTP/1.1[0m" 403 -
+2024-02-10 16:28:13,685 - INFO - User user1 authenticated with role user
+2024-02-10 16:28:13,685 - INFO - Accessing /api/users endpoint by user1 with role user
+2024-02-10 16:28:16,384 - ERROR - Error querying OPA: HTTPConnectionPool(host='opa-service', port=8181): Max retries exceeded with url: /v1/data/access/authz (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x00000212B35E1370>: Failed to resolve 'opa-service' ([Errno 11001] getaddrinfo failed)"))
+2024-02-10 16:28:16,384 - WARNING - Unauthorized access to /api/users by user1
+2024-02-10 16:28:16,384 - INFO - 127.0.0.1 - - [10/Feb/2024 16:28:16] "[31m[1mGET /api/users HTTP/1.1[0m" 403 -
+2024-02-10 16:29:12,843 - INFO -  * Detected change in 'C:\\Users\\salem\\Desktop\\sandbox\\github\\opa-flask\\app.py', reloading
+2024-02-10 16:29:12,936 - INFO -  * Restarting with stat
+2024-02-10 16:29:13,775 - WARNING -  * Debugger is active!
+2024-02-10 16:29:13,788 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 16:29:16,755 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-10 16:29:16,756 - INFO - [33mPress CTRL+C to quit[0m
+2024-02-10 16:29:16,768 - INFO -  * Restarting with stat
+2024-02-10 16:29:17,581 - WARNING -  * Debugger is active!
+2024-02-10 16:29:17,590 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 16:29:21,466 - INFO - 127.0.0.1 - - [10/Feb/2024 16:29:21] "[33mGET /api/usersd HTTP/1.1[0m" 404 -
+2024-02-10 16:29:25,634 - INFO - User user1 authenticated with role user
+2024-02-10 16:29:25,634 - INFO - Accessing /api/users endpoint by user1 with role user
+2024-02-10 16:29:25,654 - WARNING - Unauthorized access to /api/users by user1
+2024-02-10 16:29:25,655 - INFO - 127.0.0.1 - - [10/Feb/2024 16:29:25] "[31m[1mGET /api/users HTTP/1.1[0m" 403 -
+2024-02-10 16:32:36,996 - INFO -  * Detected change in 'C:\\Users\\salem\\Desktop\\sandbox\\github\\opa-flask\\app.py', reloading
+2024-02-10 16:32:37,091 - INFO -  * Restarting with stat
+2024-02-10 16:33:36,966 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-10 16:33:36,966 - INFO - [33mPress CTRL+C to quit[0m
+2024-02-10 16:33:36,969 - INFO -  * Restarting with stat
+2024-02-10 16:33:37,642 - WARNING -  * Debugger is active!
+2024-02-10 16:33:37,652 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 16:33:41,610 - INFO - User user1 authenticated with role user
+2024-02-10 16:33:41,611 - INFO - Accessing /api/users endpoint by user1 with role user
+2024-02-10 16:33:41,634 - INFO - 127.0.0.1 - - [10/Feb/2024 16:33:41] "GET /api/users HTTP/1.1" 200 -
+2024-02-10 16:33:45,071 - INFO - User admin authenticated with role admin
+2024-02-10 16:33:45,071 - INFO - Creating user by admin: admin
+2024-02-10 16:33:45,080 - INFO - 127.0.0.1 - - [10/Feb/2024 16:33:45] "[31m[1mPOST /api/users HTTP/1.1[0m" 415 -
+2024-02-10 16:36:22,913 - INFO -  * Detected change in 'C:\\Users\\salem\\Desktop\\sandbox\\github\\opa-flask\\app.py', reloading
+2024-02-10 16:36:23,018 - INFO -  * Restarting with stat
+2024-02-10 16:36:24,057 - WARNING -  * Debugger is active!
+2024-02-10 16:36:24,073 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 16:36:42,605 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-02-10 16:36:42,605 - INFO - [33mPress CTRL+C to quit[0m
+2024-02-10 16:36:42,615 - INFO -  * Restarting with stat
+2024-02-10 16:36:43,394 - WARNING -  * Debugger is active!
+2024-02-10 16:36:43,408 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 16:36:47,729 - INFO - User admin authenticated with role admin
+2024-02-10 16:36:47,729 - INFO - Creating user by admin: admin
+2024-02-10 16:36:47,745 - INFO - 127.0.0.1 - - [10/Feb/2024 16:36:47] "[31m[1mPOST /api/users HTTP/1.1[0m" 415 -
+2024-02-10 16:36:49,082 - INFO - User admin authenticated with role admin
+2024-02-10 16:36:49,082 - INFO - Creating user by admin: admin
+2024-02-10 16:36:49,089 - INFO - 127.0.0.1 - - [10/Feb/2024 16:36:49] "[31m[1mPOST /api/users HTTP/1.1[0m" 415 -
+2024-02-10 16:36:55,816 - INFO - User user1 authenticated with role user
+2024-02-10 16:36:55,816 - INFO - Accessing /api/users endpoint by user1 with role user
+2024-02-10 16:36:55,825 - INFO - 127.0.0.1 - - [10/Feb/2024 16:36:55] "GET /api/users HTTP/1.1" 200 -
+2024-02-10 16:36:58,768 - INFO - User admin authenticated with role admin
+2024-02-10 16:36:58,768 - INFO - Creating user by admin: admin
+2024-02-10 16:36:58,773 - INFO - 127.0.0.1 - - [10/Feb/2024 16:36:58] "[31m[1mPOST /api/users HTTP/1.1[0m" 415 -
+2024-02-10 16:42:39,929 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.59:8000
+2024-02-10 16:42:39,930 - INFO - [33mPress CTRL+C to quit[0m
+2024-02-10 16:42:39,938 - INFO -  * Restarting with stat
+2024-02-10 16:42:40,647 - WARNING -  * Debugger is active!
+2024-02-10 16:42:40,658 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 16:42:55,982 - INFO - User admin authenticated with role admin
+2024-02-10 16:42:55,982 - INFO - Creating user by admin: admin
+2024-02-10 16:42:55,997 - INFO - 127.0.0.1 - - [10/Feb/2024 16:42:55] "[31m[1mPOST /api/users HTTP/1.1[0m" 415 -
+2024-02-10 16:42:58,512 - INFO - User user1 authenticated with role user
+2024-02-10 16:42:58,512 - INFO - Accessing /api/users endpoint by user1 with role user
+2024-02-10 16:42:58,521 - INFO - 127.0.0.1 - - [10/Feb/2024 16:42:58] "GET /api/users HTTP/1.1" 200 -
+2024-02-10 16:44:03,090 - INFO - User admin authenticated with role admin
+2024-02-10 16:44:03,090 - INFO - Creating user by admin: admin
+2024-02-10 16:44:03,097 - INFO - 127.0.0.1 - - [10/Feb/2024 16:44:03] "[31m[1mPOST /api/users HTTP/1.1[0m" 400 -
+2024-02-10 16:44:17,147 - INFO - User admin authenticated with role admin
+2024-02-10 16:44:17,147 - INFO - Creating user by admin: admin
+2024-02-10 16:44:17,173 - INFO - 127.0.0.1 - - [10/Feb/2024 16:44:17] "[35m[1mPOST /api/users HTTP/1.1[0m" 500 -
+2024-02-10 16:44:58,120 - INFO -  * Detected change in 'C:\\Users\\salem\\Desktop\\sandbox\\github\\opa-flask\\app.py', reloading
+2024-02-10 16:44:58,172 - INFO -  * Restarting with stat
+2024-02-10 16:44:59,101 - WARNING -  * Debugger is active!
+2024-02-10 16:44:59,121 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 16:45:07,338 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.59:8000
+2024-02-10 16:45:07,338 - INFO - [33mPress CTRL+C to quit[0m
+2024-02-10 16:45:07,346 - INFO -  * Restarting with stat
+2024-02-10 16:45:08,034 - WARNING -  * Debugger is active!
+2024-02-10 16:45:08,034 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 16:45:15,008 - INFO - User admin authenticated with role admin
+2024-02-10 16:45:15,008 - INFO - Creating user by admin: admin
+2024-02-10 16:45:15,030 - INFO - 127.0.0.1 - - [10/Feb/2024 16:45:15] "[35m[1mPOST /api/users HTTP/1.1[0m" 500 -
+2024-02-10 16:46:16,750 - INFO -  * Detected change in 'C:\\Users\\salem\\Desktop\\sandbox\\github\\opa-flask\\app.py', reloading
+2024-02-10 16:46:16,797 - INFO -  * Restarting with stat
+2024-02-10 16:46:17,459 - WARNING -  * Debugger is active!
+2024-02-10 16:46:17,469 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 16:46:26,642 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.59:8000
+2024-02-10 16:46:26,643 - INFO - [33mPress CTRL+C to quit[0m
+2024-02-10 16:46:26,649 - INFO -  * Restarting with stat
+2024-02-10 16:46:27,223 - WARNING -  * Debugger is active!
+2024-02-10 16:46:27,239 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 16:46:41,867 - INFO - User user1 authenticated with role user
+2024-02-10 16:46:41,867 - INFO - Accessing /api/users endpoint by user1 with role user
+2024-02-10 16:46:41,880 - INFO - 127.0.0.1 - - [10/Feb/2024 16:46:41] "GET /api/users HTTP/1.1" 200 -
+2024-02-10 16:46:44,669 - INFO - User admin authenticated with role admin
+2024-02-10 16:46:44,669 - INFO - Creating user by admin: admin
+2024-02-10 16:46:44,686 - INFO - 127.0.0.1 - - [10/Feb/2024 16:46:44] "[35m[1mPOST /api/users HTTP/1.1[0m" 500 -
+2024-02-10 16:49:15,603 - INFO -  * Detected change in 'C:\\Users\\salem\\Desktop\\sandbox\\github\\opa-flask\\app.py', reloading
+2024-02-10 16:49:15,658 - INFO -  * Restarting with stat
+2024-02-10 16:49:16,508 - WARNING -  * Debugger is active!
+2024-02-10 16:49:16,523 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 16:49:22,490 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.59:8000
+2024-02-10 16:49:22,490 - INFO - [33mPress CTRL+C to quit[0m
+2024-02-10 16:49:22,498 - INFO -  * Restarting with stat
+2024-02-10 16:49:23,086 - WARNING -  * Debugger is active!
+2024-02-10 16:49:23,096 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 16:50:16,931 - INFO - User admin authenticated with role admin
+2024-02-10 16:50:16,932 - INFO - Creating user by admin: admin
+2024-02-10 16:50:16,955 - INFO - 127.0.0.1 - - [10/Feb/2024 16:50:16] "[35m[1mPOST /api/users HTTP/1.1[0m" 500 -
+2024-02-10 16:50:36,692 - INFO - User user1 authenticated with role user
+2024-02-10 16:50:36,693 - INFO - 127.0.0.1 - - [10/Feb/2024 16:50:36] "[31m[1mPOST /api/users HTTP/1.1[0m" 403 -
+2024-02-10 16:51:03,819 - INFO - User admin authenticated with role admin
+2024-02-10 16:51:03,820 - INFO - Creating user by admin: admin
+2024-02-10 16:51:03,853 - INFO - 127.0.0.1 - - [10/Feb/2024 16:51:03] "[35m[1mPOST /api/users HTTP/1.1[0m" 500 -
+2024-02-10 16:52:23,478 - INFO - User admin authenticated with role admin
+2024-02-10 16:52:23,478 - INFO - Creating user by admin: admin
+2024-02-10 16:52:23,493 - INFO - 127.0.0.1 - - [10/Feb/2024 16:52:23] "[35m[1mPOST /api/users HTTP/1.1[0m" 500 -
+2024-02-10 16:56:27,824 - INFO -  * Detected change in 'C:\\Users\\salem\\Desktop\\sandbox\\github\\opa-flask\\app.py', reloading
+2024-02-10 16:56:27,908 - INFO -  * Restarting with stat
+2024-02-10 16:56:28,687 - WARNING -  * Debugger is active!
+2024-02-10 16:56:28,699 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 16:56:33,928 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.59:8000
+2024-02-10 16:56:33,929 - INFO - [33mPress CTRL+C to quit[0m
+2024-02-10 16:56:33,937 - INFO -  * Restarting with stat
+2024-02-10 16:56:34,590 - WARNING -  * Debugger is active!
+2024-02-10 16:56:34,604 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 16:56:57,792 - INFO - User admin authenticated with role admin
+2024-02-10 16:56:57,792 - INFO - Creating user by admin: admin
+2024-02-10 16:56:57,811 - INFO - 127.0.0.1 - - [10/Feb/2024 16:56:57] "POST /api/users HTTP/1.1" 200 -
+2024-02-10 16:57:18,071 - INFO - User user1 authenticated with role user
+2024-02-10 16:57:18,071 - INFO - Accessing /api/users endpoint by user1 with role user
+2024-02-10 16:57:18,076 - INFO - 127.0.0.1 - - [10/Feb/2024 16:57:18] "GET /api/users HTTP/1.1" 200 -
+2024-02-10 16:57:34,629 - INFO - User admin authenticated with role admin
+2024-02-10 16:57:34,629 - INFO - Accessing /api/users endpoint by admin with role admin
+2024-02-10 16:57:34,633 - INFO - 127.0.0.1 - - [10/Feb/2024 16:57:34] "GET /api/users HTTP/1.1" 200 -
+2024-02-10 17:31:43,548 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.59:8000
+2024-02-10 17:31:43,549 - INFO - [33mPress CTRL+C to quit[0m
+2024-02-10 17:31:43,561 - INFO -  * Restarting with stat
+2024-02-10 17:31:44,462 - WARNING -  * Debugger is active!
+2024-02-10 17:31:44,479 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 17:32:42,821 - INFO - 127.0.0.1 - - [10/Feb/2024 17:32:42] "[33mGET / HTTP/1.1[0m" 404 -
+2024-02-10 17:32:42,989 - INFO - 127.0.0.1 - - [10/Feb/2024 17:32:42] "[33mGET / HTTP/1.1[0m" 404 -
+2024-02-10 17:33:12,724 - INFO - 127.0.0.1 - - [10/Feb/2024 17:33:12] "[33mGET / HTTP/1.1[0m" 404 -
+2024-02-10 17:33:12,828 - INFO - 127.0.0.1 - - [10/Feb/2024 17:33:12] "[33mGET / HTTP/1.1[0m" 404 -
+2024-02-10 17:33:21,911 - WARNING - Authentication credentials missing or invalid
+2024-02-10 17:33:21,911 - INFO - 127.0.0.1 - - [10/Feb/2024 17:33:21] "[31m[1mGET /api/users HTTP/1.1[0m" 401 -
+2024-02-10 17:33:22,005 - WARNING - Authentication credentials missing or invalid
+2024-02-10 17:33:22,007 - INFO - 127.0.0.1 - - [10/Feb/2024 17:33:22] "[31m[1mGET /api/users HTTP/1.1[0m" 401 -
+2024-02-10 17:33:54,501 - INFO - User admin authenticated with role admin
+2024-02-10 17:33:54,501 - INFO - Accessing /api/users endpoint by admin with role admin
+2024-02-10 17:33:54,520 - INFO - 127.0.0.1 - - [10/Feb/2024 17:33:54] "GET /api/users HTTP/1.1" 200 -
+2024-02-10 17:34:06,527 - INFO - User admin authenticated with role admin
+2024-02-10 17:34:06,527 - INFO - Accessing /api/users endpoint by admin with role admin
+2024-02-10 17:34:06,532 - INFO - 127.0.0.1 - - [10/Feb/2024 17:34:06] "GET /api/users HTTP/1.1" 200 -
+2024-02-10 17:34:37,579 - WARNING - Authentication credentials missing or invalid
+2024-02-10 17:34:37,579 - INFO - 127.0.0.1 - - [10/Feb/2024 17:34:37] "[31m[1mGET /api/users HTTP/1.1[0m" 401 -
+2024-02-10 17:34:37,666 - WARNING - Authentication credentials missing or invalid
+2024-02-10 17:34:37,667 - INFO - 127.0.0.1 - - [10/Feb/2024 17:34:37] "[31m[1mGET /api/users HTTP/1.1[0m" 401 -
+2024-02-10 17:40:40,512 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.59:8000
+2024-02-10 17:40:40,513 - INFO - [33mPress CTRL+C to quit[0m
+2024-02-10 17:40:40,519 - INFO -  * Restarting with stat
+2024-02-10 17:40:41,123 - WARNING -  * Debugger is active!
+2024-02-10 17:40:41,133 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 17:40:54,770 - WARNING - Authentication credentials missing or invalid
+2024-02-10 17:40:54,772 - INFO - 127.0.0.1 - - [10/Feb/2024 17:40:54] "[31m[1mGET /api/users HTTP/1.1[0m" 401 -
+2024-02-10 17:40:54,857 - WARNING - Authentication credentials missing or invalid
+2024-02-10 17:40:54,857 - INFO - 127.0.0.1 - - [10/Feb/2024 17:40:54] "[31m[1mGET /api/users HTTP/1.1[0m" 401 -
+2024-02-10 17:41:01,391 - INFO - User admin authenticated with role admin
+2024-02-10 17:41:01,391 - INFO - Creating user by admin: admin
+2024-02-10 17:41:01,419 - INFO - 127.0.0.1 - - [10/Feb/2024 17:41:01] "POST /api/users HTTP/1.1" 200 -
+2024-02-10 17:41:07,060 - INFO - User admin authenticated with role admin
+2024-02-10 17:41:07,060 - INFO - Creating user by admin: admin
+2024-02-10 17:41:07,080 - INFO - 127.0.0.1 - - [10/Feb/2024 17:41:07] "POST /api/users HTTP/1.1" 200 -
+2024-02-10 17:41:52,678 - INFO - User admin authenticated with role admin
+2024-02-10 17:41:52,680 - INFO - Accessing /api/users endpoint by admin with role admin
+2024-02-10 17:41:52,685 - INFO - 127.0.0.1 - - [10/Feb/2024 17:41:52] "GET /api/users HTTP/1.1" 200 -
+2024-02-10 17:46:38,108 - INFO -  * Detected change in 'C:\\Users\\salem\\Desktop\\sandbox\\github\\opa-flask\\app.py', reloading
+2024-02-10 17:46:38,183 - INFO -  * Restarting with stat
+2024-02-10 17:46:49,094 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.59:8000
+2024-02-10 17:46:49,094 - INFO - [33mPress CTRL+C to quit[0m
+2024-02-10 17:46:49,102 - INFO -  * Restarting with stat
+2024-02-10 17:46:49,677 - WARNING -  * Debugger is active!
+2024-02-10 17:46:49,684 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 17:48:25,143 - INFO - 127.0.0.1 - - [10/Feb/2024 17:48:25] "[35m[1mGET /api/users HTTP/1.1[0m" 500 -
+2024-02-10 18:00:31,994 - INFO -  * Detected change in 'C:\\Users\\salem\\Desktop\\sandbox\\github\\opa-flask\\app.py', reloading
+2024-02-10 18:00:32,144 - INFO -  * Restarting with stat
+2024-02-10 18:00:38,091 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.59:8000
+2024-02-10 18:00:38,091 - INFO - [33mPress CTRL+C to quit[0m
+2024-02-10 18:00:38,103 - INFO -  * Restarting with stat
+2024-02-10 18:00:38,900 - WARNING -  * Debugger is active!
+2024-02-10 18:00:38,912 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 18:01:10,003 - WARNING - Invalid credentials provided: admin
+2024-02-10 18:01:10,003 - INFO - 127.0.0.1 - - [10/Feb/2024 18:01:10] "[31m[1mGET /api/users HTTP/1.1[0m" 401 -
+2024-02-10 18:01:11,756 - WARNING - Invalid credentials provided: admin
+2024-02-10 18:01:11,757 - INFO - 127.0.0.1 - - [10/Feb/2024 18:01:11] "[31m[1mGET /api/users HTTP/1.1[0m" 401 -
+2024-02-10 18:01:54,434 - INFO - 127.0.0.1 - - [10/Feb/2024 18:01:54] "[31m[1mPOST /api/users HTTP/1.1[0m" 405 -
+2024-02-10 18:02:01,797 - INFO - 127.0.0.1 - - [10/Feb/2024 18:02:01] "[31m[1mPOST /api/users HTTP/1.1[0m" 405 -
+2024-02-10 18:05:04,629 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.59:8000
+2024-02-10 18:05:04,629 - INFO - [33mPress CTRL+C to quit[0m
+2024-02-10 18:05:04,637 - INFO -  * Restarting with stat
+2024-02-10 18:05:05,201 - WARNING -  * Debugger is active!
+2024-02-10 18:05:05,219 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 18:05:41,884 - INFO - 127.0.0.1 - - [10/Feb/2024 18:05:41] "[31m[1mPOST /api/users HTTP/1.1[0m" 405 -
+2024-02-10 18:07:02,145 - INFO - 127.0.0.1 - - [10/Feb/2024 18:07:02] "[33mGET / HTTP/1.1[0m" 404 -
+2024-02-10 18:07:02,314 - INFO - 127.0.0.1 - - [10/Feb/2024 18:07:02] "[33mGET / HTTP/1.1[0m" 404 -
+2024-02-10 18:07:05,826 - WARNING - Authentication credentials missing or invalid
+2024-02-10 18:07:05,827 - INFO - 127.0.0.1 - - [10/Feb/2024 18:07:05] "[31m[1mGET /api/users HTTP/1.1[0m" 401 -
+2024-02-10 18:07:05,914 - WARNING - Authentication credentials missing or invalid
+2024-02-10 18:07:05,915 - INFO - 127.0.0.1 - - [10/Feb/2024 18:07:05] "[31m[1mGET /api/users HTTP/1.1[0m" 401 -
+2024-02-10 18:07:13,296 - INFO - Accessing /api/users endpoint by admin
+2024-02-10 18:07:13,297 - INFO - 127.0.0.1 - - [10/Feb/2024 18:07:13] "GET /api/users HTTP/1.1" 200 -
+2024-02-10 18:07:17,801 - INFO - 127.0.0.1 - - [10/Feb/2024 18:07:17] "[31m[1mPOST /api/users HTTP/1.1[0m" 405 -
+2024-02-10 18:07:21,363 - INFO - 127.0.0.1 - - [10/Feb/2024 18:07:21] "[31m[1mPOST /api/users HTTP/1.1[0m" 405 -
+2024-02-10 18:07:54,942 - INFO - Accessing /api/users endpoint by admin
+2024-02-10 18:07:54,942 - INFO - 127.0.0.1 - - [10/Feb/2024 18:07:54] "GET /api/users HTTP/1.1" 200 -
+2024-02-10 18:07:58,367 - INFO - 127.0.0.1 - - [10/Feb/2024 18:07:58] "[31m[1mPOST /api/users HTTP/1.1[0m" 405 -
+2024-02-10 18:08:04,016 - INFO - Accessing /api/users endpoint by admin
+2024-02-10 18:08:04,016 - INFO - 127.0.0.1 - - [10/Feb/2024 18:08:04] "GET /api/users HTTP/1.1" 200 -
+2024-02-10 18:08:06,034 - INFO - 127.0.0.1 - - [10/Feb/2024 18:08:06] "[31m[1mPOST /api/users HTTP/1.1[0m" 405 -
+2024-02-10 18:12:02,942 - INFO -  * Detected change in 'C:\\Users\\salem\\Desktop\\sandbox\\github\\opa-flask\\app.py', reloading
+2024-02-10 18:12:02,987 - INFO -  * Restarting with stat
+2024-02-10 18:12:03,683 - WARNING -  * Debugger is active!
+2024-02-10 18:12:03,683 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 18:12:10,133 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.59:8000
+2024-02-10 18:12:10,133 - INFO - [33mPress CTRL+C to quit[0m
+2024-02-10 18:12:10,138 - INFO -  * Restarting with stat
+2024-02-10 18:12:10,754 - WARNING -  * Debugger is active!
+2024-02-10 18:12:10,762 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 18:12:46,248 - INFO - 127.0.0.1 - - [10/Feb/2024 18:12:46] "[35m[1mPOST /api/users HTTP/1.1[0m" 500 -
+2024-02-10 18:12:50,765 - INFO - Accessing /api/users endpoint by admin
+2024-02-10 18:12:50,766 - INFO - 127.0.0.1 - - [10/Feb/2024 18:12:50] "GET /api/users HTTP/1.1" 200 -
+2024-02-10 18:17:05,671 - INFO -  * Detected change in 'C:\\Users\\salem\\Desktop\\sandbox\\github\\opa-flask\\app.py', reloading
+2024-02-10 18:17:05,735 - INFO -  * Restarting with stat
+2024-02-10 18:17:06,353 - WARNING -  * Debugger is active!
+2024-02-10 18:17:06,370 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 18:17:10,558 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.59:8000
+2024-02-10 18:17:10,558 - INFO - [33mPress CTRL+C to quit[0m
+2024-02-10 18:17:10,564 - INFO -  * Restarting with stat
+2024-02-10 18:17:11,148 - WARNING -  * Debugger is active!
+2024-02-10 18:17:11,164 - INFO -  * Debugger PIN: 196-153-844
+2024-02-10 18:17:35,869 - INFO - User admin authenticated with role admin
+2024-02-10 18:17:35,869 - INFO - Accessing /api/users endpoint by admin with role admin
+2024-02-10 18:17:35,890 - INFO - 127.0.0.1 - - [10/Feb/2024 18:17:35] "GET /api/users HTTP/1.1" 200 -
+2024-02-10 18:17:38,973 - INFO - User admin authenticated with role admin
+2024-02-10 18:17:38,973 - INFO - Creating user by admin: admin
+2024-02-10 18:17:38,981 - INFO - 127.0.0.1 - - [10/Feb/2024 18:17:38] "POST /api/users HTTP/1.1" 200 -
+2024-02-10 18:19:18,063 - INFO -  * Detected change in 'C:\\Users\\salem\\Desktop\\sandbox\\github\\opa-flask\\app.py', reloading
+2024-02-10 18:19:18,116 - INFO -  * Restarting with stat
+2024-02-10 18:19:18,807 - WARNING -  * Debugger is active!
+2024-02-10 18:19:18,815 - INFO -  * Debugger PIN: 196-153-844

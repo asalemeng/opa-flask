@@ -2,6 +2,9 @@
 
 1. Setting up the Flask App with Basic Authentication:
     - Create a Flask application in Python in virtual environment (venv).
+         - #install venv virtual: python -m venv venv 
+         - #activate venv : venv\Scripts\activate.ps1
+         - #install required packages : pip install -r requirements.txt
     - Implement basic authentication for the endpoints using Flask's authentication mechanisms.
 
 2. Integrate OPA for Authorization:
@@ -17,12 +20,20 @@
 
 5. Deploying to Minikube:
     - Set up a Minikube Kubernetes cluster.
+        - I created a Deployment definition yaml that I used to deploy in my Kubernetes cluster. The deployment specifies a Pod containing two containers:
+            - my-cool-service flask app
+            - OPA server 
+               - we can create ConfigMaps with our Policy opaweb-policy.rego file, and put it in the OPA Container.
+                    $ kubectl create configmap opademo-policy --from-file=opaweb-policy.rego
     - Create Kubernetes YAML files for deploying your Flask app and OPA in the same Pod (sidecar).
-    - Deploy the services to your Minikube cluster.
-    - Create a ConfigMap for OPA policies.
-    
+        - Deploy deployment.yaml :
+            kubectl apply -f deployment.yaml 
+
 6. Exposing Services:
-    - Expose the Flask app service internally in the cluster.
+    - Deploy the services to your Minikube cluster.
+        - Expose the service 
+            kubectl apply -f service.yaml
+
     - Enable Ingress and create ingress.yaml to expose the Flask app endpoint externally then create secret key to be used as  HTTPS.
 
 7. Testing in Kubernetes:
