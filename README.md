@@ -15,16 +15,14 @@
 4.Write Dockerfiles for both the Flask app 
     - Build Docker images for both services and push them to a container registry.
 
-
-5. Deploying to Minikube:
+5.Deploying to Minikube:
     - Set up a Minikube Kubernetes cluster.
     - Create Kubernetes YAML files for deploying your Flask app and OPA in the same Pod (sidecar).
     - Deploy the services to your Minikube cluster.
     - Create a ConfigMap for OPA policies.
-
-7. Exposing Services:
+6.Exposing Services:
     - Expose the Flask app service internally in the cluster.
     - Enable Ingress and create ingress.yaml to expose the Flask app endpoint externally then create secret key to be used as  HTTPS.
 
-9. Testing in Kubernetes:
+7.Testing in Kubernetes:
     - Test the endpoints within the Kubernetes cluster to ensure everything is working as expected.
