@@ -19,7 +19,7 @@ DB = {
     ]
 }
 
-@route('/api/users/<user>', method=['GET', 'POST', 'DELETE'])
+@route('/api/users/<user>', method=['GET', 'POST'])
 def serv_users(user):
     logging.info(f"Handling {request.method} request for user: {user}")
     response.content_type = 'application/json'
