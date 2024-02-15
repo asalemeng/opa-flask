@@ -7,8 +7,8 @@ from bottle import route, run, hook, request, response
 # Configure logging
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s',
-                    filename='app.log',  # Log to a file named app.log; remove this to log to stdout
-                    filemode='a')  # Append mode
+                    filename='app.log',  
+                    filemode='a')  
 
 OPA_SERVER = os.environ.get('OPA_SERVER', 'http://opa-service:8181')
 
