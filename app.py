@@ -34,7 +34,7 @@ def serv_users(user):
             logging.warning(f"Attempted to remove non-existent user: {user} - {e}")
     return json.dumps({'data': DB['users']})
 
-@route('/error_401', method=['GET', 'POST', 'DELETE'])
+@route('/error_401', method=['GET', 'POST'])
 def error():
     logging.error("Unauthorized access attempt")
     response.body = json.dumps({'Error': 'Unauthorized'})
