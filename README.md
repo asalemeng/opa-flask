@@ -1,35 +1,72 @@
-# opa-flask
-![alt text](image.png)
+# opa cool app
 
-1. Setting up the Flask App with Basic Authentication:
-    - Create a Flask application in Python in virtual environment (venv).
-         - #install venv virtual: python -m venv venv 
-         - #activate venv : venv\Scripts\activate.ps1
-         - #install required packages : pip install -r requirements.txt
-    - Implement basic authentication for the endpoints using Flask's authentication mechanisms.
 
-2. Integrate OPA for Authorization:
-    - Add OPA authorization logic to your Flask application. You'll need to make requests to the OPA service from your Flask app to enforce policies.
-    - Define Rego policies to enforce the authorization rules specified in the task.
-        use https://play.openpolicyagent.org/ for testing 
+This README provides detailed instructions on how to deploy an Open Policy Agent (OPA) service alongside a web application (opacoolapp) within a Kubernetes cluster managed by Minikube. The web application will communicate with OPA for authorization decisions.
 
-3. Testing Locally:
-    - Test your Flask app and OPA integration locally to ensure that authentication and authorization are working as expected. You can use tools like curl or Postman for testing.
-    - Containerize Flask App only (Docker image: /openpolicyagent/opa:edge-rootless):
+Prerequisites
+Minikube: Ensure Minikube is installed on your machine. For installation instructions, visit the official Minikube website.
+kubectl: This is the Kubernetes command-line tool that allows you to run commands against Kubernetes clusters. For installation instructions, visit the official Kubernetes documentation.
+Docker (Optional): Required if you intend to build Docker images for your application. For Docker installation, visit the Docker website.
+Step 1: Start Your Kubernetes Cluster
+Open a terminal and start Minikube with your preferred driver. For example, to start Minikube with the Hyper-V driver on Windows, run:
 
-4. Write Dockerfiles for both the Flask app 
-    - Build Docker images for both services and push them to a container registry.
+sh
+Copy code
+minikube start --driver=hyperv
+Replace hyperv with your preferred driver (e.g., virtualbox, vmware, etc.).
 
-5. Deploying to Minikube:
-    - Set up a Minikube Kubernetes cluster.
-        - I created a Deployment definition yaml that I used to deploy in my Kubernetes cluster. The deployment specifies a Pod containing two containers:
-            - my-cool-service flask app
-            - OPA server 
-               - we can create ConfigMaps with our Policy opaweb-policy.rego file, and put it in the OPA Container.
-                    $ kubectl create configmap opademo-policy --from-file=opaweb-policy.rego
-    - Create Kubernetes YAML files for deploying your Flask app and OPA in the same Pod (sidecar).
-        - Deploy deployment.yaml :
-            kubectl apply -f deployment.yaml 
+Once Minikube is started, check the cluster status:
+
+sh
+Copy code
+minikube status
+Step 2: Deploy OPA
+Create a ConfigMap for your OPA policies. Assuming your policy file is named policy.rego, create a ConfigMap named opa-policy:
+
+sh
+Copy code
+kubectl create configmap opa-policy --from-file=policy.rego=path/to/your/policy.rego
+Deploy OPA using the deployment YAML file. Assuming the file is named opa-deployment.yaml, apply it:
+
+sh
+Copy code
+kubectl apply -f opa-deployment.yaml
+Deploy the OPA Service. Ensure the service YAML file is correctly set up (usually named opa-service.yaml) and apply it:
+
+sh
+Copy code
+kubectl apply -f opa-service.yaml
+Verify the OPA deployment and service are running:
+
+sh
+Copy code
+kubectl get pods
+kubectl get service opa-service
+Step 3: Deploy opacoolapp
+Deploy the opacoolapp application using its deployment YAML file. Assuming the file is named opacoolapp-deployment.yaml, apply it:
+
+sh
+Copy code
+kubectl apply -f opacoolapp-deployment.yaml
+Deploy the opacoolapp Service using its service YAML file. Assuming the file is named opacoolapp-service.yaml, apply it:
+
+sh
+Copy code
+kubectl apply -f opacoolapp-service.yaml
+Verify the opacoolapp deployment and service are running:
+
+sh
+Copy code
+kubectl get pods
+kubectl get service opacoolapp-service
+Step 4: Testing Communication
+To test communication between opacoolapp and the OPA service:
+
+Port Forward (if necessary) to access opacoolapp locally:
+
+sh
+Copy code
+kubectl port-forward service/opacoolapp-service 8000:8000
 
 6. Exposing Services:
     - Deploy the services to your Minikube cluster.

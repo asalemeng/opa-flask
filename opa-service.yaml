@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: opa-demo
+  name: opa-service
 spec:
   selector:
-    app: opademo
+    app: opa
   ports:
     - protocol: TCP
-      port: 8000
-      targetPort: 8000
+      port: 8181
+      targetPort: 8181

@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: opacoolapp-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: opacoolapp
+  template:
+    metadata:
+      labels:
+        app: opacoolapp
+    spec:
+      containers:
+      - name: opacoolapp
+        image: salemeng/opa-coolapp  # Replace with your actual image
+        ports:
+        - containerPort: 8000  # Adjust if your app listens on a different port
+        env:
+        - name: OPA_URL
+          value: "http://opa-service:8181"  # Assuming your OPA service is named opa-service and listens on port 8181
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: opacoolapp-service
+spec:
+  type: NodePort
+  selector:
+    app: opacoolapp
+  ports:
+  - port: 8000  # The port your app listens on
+    targetPort: 8000  # The container port
+    nodePort: 30080  # The port exposed on each node, choose an available port within the allowed range (typically 30000-32767)

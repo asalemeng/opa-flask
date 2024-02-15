@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: opa-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: opa
+  template:
+    metadata:
+      labels:
+        app: opa
+    spec:
+      containers:
+      - name: opa
+        image: openpolicyagent/opa:edge-rootless
+        ports:
+        - containerPort: 8181
+        args:
+        - "run"
+        - "--server"
+        - "--log-level=info"
+        - "/policies/policy.rego"  # Specify the policy file path
+        volumeMounts:
+        - name: opa-policy-volume
+          mountPath: /policies
+      volumes:
+      - name: opa-policy-volume
+        configMap:
+          name: opa-policy
